@@ -1,0 +1,70 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149138436.jpg?t=st=1652710630~exp=1652711230~hmac=ed47afab61c4d9ef73b31473b631b88eb363fb0119abca7a148b76f5858c5f76&w=1800");
+    background-size: cover;
+  }
+
+  .registerCard{
+    background-color: white;
+    padding: 50px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .registerTitle {
+    font-size: 50px;
+  }
+  
+  .registerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registerForm > label {
+    margin: 10px 0;
+  }
+  
+  .registerInput {
+    padding: 10px;
+    background-color: white;
+    border: 0.4 solid #000000;
+    border-radius: 1px;
+  }
+  
+  .registerInput:focus {
+    outline: none;
+  }
+  
+  .registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    text-align: center;
+  }
+  
+  .registerLoginButton {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    background-color: lightcoral;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 1px;
+  }
