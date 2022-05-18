@@ -7,8 +7,7 @@
     background: linear-gradient(
         rgba(0, 0, 0, 0),
         rgba(255, 255, 255, 0)
-      ),
-      url("https://img.freepik.com/free-vector/gradient-blue-dynamic-lines-background_52683-67204.jpg?t=st=1652709382~exp=1652709982~hmac=91bd4972e035044c34459bda1f4fd199b4c9160332b92f2d78813588ae54c3fd&w=1800");
+      ) ;
     background-size: cover;
   }
 
@@ -26,19 +25,20 @@
   }
   
   .loginForm {
-    margin-top: 20px;
+    margin-top: 4px;
     display: flex;
     flex-direction: column;
   }
   
   .loginForm > label {
     margin: 10px 0;
+    font-size: 16px;
   }
   
   .loginInput {
     padding: 10px;
     background-color: white;
-    border: 0.4 solid #000000;
+    border: 0.4px solid #000000;
     border-radius: 1px;
   }
   

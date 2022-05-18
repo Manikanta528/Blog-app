@@ -1,8 +1,11 @@
 import "./register.css"
+import { Link } from "react-router-dom";
+import  backGroundImg  from "../../components/assets/registerBg.svg"
+
 
 export default function Register() {
   return (
-    <div className="register" >
+    <div className="register" style={{ backgroundImage: `url(${backGroundImg})` }}>
         <div className="registerCard">
         <span className="registerTitle">Register</span>
         <form className="registerForm">
@@ -14,7 +17,7 @@ export default function Register() {
             <input type="password" className="registerInput" placeholder="Enter Your Password.." />
             <button className="registerButton">Register</button>
         </form>
-        <button className="registerLoginButton">Login</button>
+        <button className="registerLoginButton"><Link to='/login' className="link">Login</Link></button>
         </div>
     </div>
   )

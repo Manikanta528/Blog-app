@@ -28,6 +28,7 @@ function App() {
       <Route path="/settings" >
             {user?<Settings />:<Register/>}
       </Route>
+      
       <Route path="/post/:postId" >
             <Single />
       </Route>
