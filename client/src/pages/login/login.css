@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(255, 255, 255, 0)
+        rgba(0, 0, 0, 0.5),
+        rgba(255, 255, 255, 0.5)
       ) ;
     background-size: cover;
   }
@@ -55,6 +55,11 @@
     border: none;
     border-radius: 1px;
     text-align: center;
+  }
+
+  .loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(252, 173, 173);
   }
   
   .loginRegisterButton {
