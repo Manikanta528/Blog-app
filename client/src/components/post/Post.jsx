@@ -1,3 +1,4 @@
+import MDEditor from '@uiw/react-md-editor';
 
 import { Link } from "react-router-dom"
 import "./post.css"
@@ -27,9 +28,7 @@ export default function Post({post}) {
             <hr />
             <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
         </div>
-        <p className="postDesc">
-            {post.desc}
-        </p>
+        <MDEditor.Markdown className="postDesc" source={post.desc} />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
 
+import MDEditor from '@uiw/react-md-editor';
 
 export default function Write() {
   const [title, setTitle] = useState("");
@@ -16,6 +17,7 @@ export default function Write() {
       username: user.username,
       title,
       desc,
+      categories:["Java"],
     };
     if (file) {
       const data =new FormData();
@@ -46,9 +48,15 @@ export default function Write() {
                 <input type="file"  id="fileInput" style={{display:"none"}} onChange={(e) => setFile(e.target.files[0])}/>
                 <input type="text"  className='writeInput' placeholder='Title...' autoFocus={true} onChange={e=>setTitle(e.target.value)}/>
             </div>
-            <div className="writeFormGroup">
-                <textarea type="text"  className="writeInput writeText"  placeholder='Tell Your Story...' onChange={e=>setDesc(e.target.value)}></textarea>
-            </div>
+            <div className="container">
+      <MDEditor
+        value={desc}
+        onChange={setDesc}
+        className="writeInput writeText"
+        height = {500}
+        style={{marginLeft:"150px"}}
+      />
+    </div>        
             <button className="writeSubmit" type="submit">Publish</button>
         </form>
     </div>

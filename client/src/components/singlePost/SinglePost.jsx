@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./singlePost.css";
 
+import MDEditor from '@uiw/react-md-editor';
+
 export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
@@ -87,14 +89,18 @@ export default function SinglePost() {
             {new Date(post.createdAt).toDateString()}
           </span>
         </div>
+
         {updateMode ? (
-          <textarea
-            className="singlePostDescInput"
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
-          />
+
+          <MDEditor
+        value={desc}
+        onChange={setDesc}
+        className="writeInput writeText"
+        height ={500}
+      />
         ) : (
-          <p className="singlePostDesc">{desc}</p>
+          <MDEditor.Markdown source={desc} 
+          className="writeInput writeText"/>
         )}
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
