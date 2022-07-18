@@ -86,7 +86,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-## Used Languages and Tools for this project
+## Used Languages and Tools for this Project
 
 - MongoDB - document database
 - Express(.js) - Node.js web framework
